@@ -1,27 +1,31 @@
-import java.util.Scanner;
-public class Calculator {
-   public static void main(String[] args)
-   {
-    int x,y,choice;
-    Scanner so = new Scanner(System.in);
-    System.out.println("enter the value of x and y: ");
-    x = so.nextInt();
-    y = so.nextInt();
+public class Calculator
+{
+	//method overloading for addition 
+	int add(int c1,int c2)
+	{
+		return c1+c2;
+	}
+	int add(int c1,int c2,int c3)
+	{
+		return c1+c2+c3;
+	}
+	int add(int c1,int c2,int c3,int c4)
+	{
+		return c1+c2+c3+c4;
+	}
 
-    System.out.println("enter your choice: ");
-    choice = so.nextInt();
-    while(true)
-    {
-        switch(choice)
-        {
-            case 1: int sum = x+y;
-                    System.out.println("the sum is"+sum);
-            case 2:  int sub = x-y;
-                    System.out.println("the difference is"+sub);
-            case 3: int mul = x*y;
-                    System.out.println("the result of the multiplication is "+mul);
-        }
-    }
-   }
-    
+	//method overloading for multiplication
+	int mul(int c1,int c2)
+	{
+		return c1*c2;
+	}
+	int mul(int c1,int c2,int c3)
+	{
+		return c1*c2*c3;
+	}
+	int mul(int c1,int c2,int c3,int c4)
+	{
+		return c1*c2*c3*c4;
+	}
+
 }
